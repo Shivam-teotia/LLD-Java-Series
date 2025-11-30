@@ -5,28 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1d8ae15-504a-4f62-973d-173d564f2346" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vendingMachine/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vendingMachine/entities/Inventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vendingMachine/entities/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vendingMachine/entities/VendingMachine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vendingMachine/enums/Coin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vendingMachine/enums/ItemType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vendingMachine/enums/Note.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vendingMachine/states/DispenseState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vendingMachine/states/IdleState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vendingMachine/states/ReadyState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vendingMachine/states/ReturnChangeState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vendingMachine/states/VendingMachineState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/EntryGate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/entities/EntryGate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/ExitGate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/entities/ExitGate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Gate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/entities/Gate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/ParkingFloor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/entities/ParkingFloor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/ParkingLot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/entities/ParkingLot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/ParkingSpot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/entities/ParkingSpot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/ParkingTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/entities/ParkingTicket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vehicle/Bike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/entities/vehicle/Bike.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vehicle/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/entities/vehicle/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vehicle/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/entities/vehicle/Truck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vehicle/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/entities/vehicle/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enums/SpotSize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/enums/SpotSize.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enums/TicketStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/enums/TicketStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enums/VehicleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/enums/VehicleType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/factory/VehicleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/factory/VehicleFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/strategy/IFeeStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/strategy/IFeeStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/strategy/IParkingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/strategy/IParkingStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/strategy/NearestSpotParkingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/strategy/NearestSpotParkingStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/strategy/SimpleHourlyStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/strategy/SimpleHourlyStrategy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -45,18 +36,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Shivam-teotia"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Shivam-teotia&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:Shivam-teotia/LLD-Java-Series.git",
-    "accountId": "cab86a5c-6392-415a-9132-d39391cbfbbe"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:Shivam-teotia/LLD-Java-Series.git&quot;,
+    &quot;accountId&quot;: &quot;cab86a5c-6392-415a-9132-d39391cbfbbe&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -68,16 +59,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/SHIVAM/Desktop/LLD/ParkingLot/src/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/SHIVAM/Desktop/LLD/ParkingLot/src/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
