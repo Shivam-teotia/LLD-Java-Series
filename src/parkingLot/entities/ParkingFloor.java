@@ -1,6 +1,6 @@
-package entities;
+package parkingLot.entities;
 
-import entities.vehicle.Vehicle;
+import parkingLot.entities.vehicle.Vehicle;
 
 import java.util.ArrayList;
 import java.util.List;

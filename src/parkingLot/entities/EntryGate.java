@@ -1,6 +1,6 @@
-package entities;
+package parkingLot.entities;
 
-import entities.vehicle.Vehicle;
+import parkingLot.entities.vehicle.Vehicle;
 
 public class EntryGate extends Gate{
     public EntryGate(int id, String operatorName) {

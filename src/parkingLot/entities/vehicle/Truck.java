@@ -1,6 +1,6 @@
-package entities.vehicle;
+package parkingLot.entities.vehicle;
 
-import enums.VehicleType;
+import parkingLot.enums.VehicleType;
 
 public class Truck extends Vehicle{
     public Truck(String licensePlate) {

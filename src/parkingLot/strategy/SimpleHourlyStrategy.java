@@ -1,6 +1,6 @@
-package strategy;
+package parkingLot.strategy;
 
-import entities.ParkingTicket;
+import parkingLot.entities.ParkingTicket;
 
 import java.time.Duration;
 import java.time.LocalDateTime;

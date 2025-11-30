@@ -1,6 +1,4 @@
-package entities;
-
-import entities.vehicle.Vehicle;
+package parkingLot.entities;
 
 public class ExitGate extends Gate{
     public ExitGate(int id, String operatorName) {

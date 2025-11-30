@@ -1,4 +1,4 @@
-package entities;
+package parkingLot.entities;
 
 public abstract class Gate {
     private final int id;

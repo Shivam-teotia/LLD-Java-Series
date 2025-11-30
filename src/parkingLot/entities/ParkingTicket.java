@@ -1,7 +1,7 @@
-package entities;
+package parkingLot.entities;
 
-import entities.vehicle.Vehicle;
-import enums.TicketStatus;
+import parkingLot.entities.vehicle.Vehicle;
+import parkingLot.enums.TicketStatus;
 
 import java.time.LocalDateTime;
 

@@ -1,10 +1,10 @@
-package factory;
+package parkingLot.factory;
 
-import entities.vehicle.Bike;
-import entities.vehicle.Car;
-import entities.vehicle.Truck;
-import entities.vehicle.Vehicle;
-import enums.VehicleType;
+import parkingLot.entities.vehicle.Bike;
+import parkingLot.entities.vehicle.Car;
+import parkingLot.entities.vehicle.Truck;
+import parkingLot.entities.vehicle.Vehicle;
+import parkingLot.enums.VehicleType;
 
 public class VehicleFactory {
     public static Vehicle createVehicle(VehicleType type, String plate){

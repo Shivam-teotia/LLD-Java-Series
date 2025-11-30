@@ -1,8 +1,8 @@
-package entities;
+package parkingLot.entities;
 
-import entities.vehicle.Vehicle;
-import strategy.IFeeStrategy;
-import strategy.IParkingStrategy;
+import parkingLot.entities.vehicle.Vehicle;
+import parkingLot.strategy.IFeeStrategy;
+import parkingLot.strategy.IParkingStrategy;
 
 import java.time.LocalDateTime;
 import java.util.HashMap;

@@ -1,7 +1,7 @@
-package entities;
+package parkingLot.entities;
 
-import entities.vehicle.Vehicle;
-import enums.SpotSize;
+import parkingLot.entities.vehicle.Vehicle;
+import parkingLot.enums.SpotSize;
 
 public class ParkingSpot {
     private final String id;
