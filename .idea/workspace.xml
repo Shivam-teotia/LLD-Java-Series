@@ -5,18 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1d8ae15-504a-4f62-973d-173d564f2346" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/vendingMachine/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vendingMachine/entities/Inventory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vendingMachine/entities/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vendingMachine/entities/VendingMachine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vendingMachine/enums/Coin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vendingMachine/enums/ItemType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vendingMachine/enums/Note.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vendingMachine/states/DispenseState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vendingMachine/states/IdleState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vendingMachine/states/ReadyState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vendingMachine/states/ReturnChangeState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vendingMachine/states/VendingMachineState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LLD-Java-Series.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ticTacToe/BoardGames.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ticTacToe/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ticTacToe/TicTacToeGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ticTacToe/entities/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ticTacToe/entities/GameContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ticTacToe/entities/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ticTacToe/entities/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ticTacToe/enums/Symbol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ticTacToe/state/GameState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ticTacToe/state/OTurnState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ticTacToe/state/OWinState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ticTacToe/state/XTurnState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ticTacToe/state/XWonState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ticTacToe/strategy/HumanPlayerStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ticTacToe/strategy/PlayerStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +32,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package-info" />
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
@@ -45,14 +51,14 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;git@github.com:Shivam-teotia/LLD-Java-Series.git&quot;,
-    &quot;accountId&quot;: &quot;cab86a5c-6392-415a-9132-d39391cbfbbe&quot;
+    &quot;accountId&quot;: &quot;c03d2c4a-9806-48a4-bc61-846c0f205a90&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="36A0Oq7JOH0d9dlDp2nStQDvgjC" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -63,10 +69,16 @@
   &quot;keyToString&quot;: {
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/SHIVAM/Desktop/LLD/ParkingLot/src/Main.java&quot;
+    &quot;last_opened_file_path&quot;: &quot;/Users/shivamteotia/Desktop/java/LLD-Java-Series&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/SHIVAM/Desktop/LLD/ParkingLot/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
