@@ -1,20 +1,43 @@
 package ticTacToe.entities;
 
 import ticTacToe.enums.Symbol;
+import ticTacToe.listener.GameEventListener;
+import ticTacToe.state.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Board {
     private final int rows;
     private final int cols;
-    private Symbol[][] grid;
+    private final Symbol[][] grid;
+    private List<GameEventListener> listeners;
 
     public Board(int rows, int cols){
         this.rows = rows;
         this.cols = cols;
+        listeners = new ArrayList<>();
         grid = new Symbol[rows][cols];
         for(int i=0; i<rows;i++){
             for(int j=0; j<cols ;j++){
                 grid[i][j] = Symbol.EMPTY;
             }
+        }
+    }
+
+    public void addListener(GameEventListener listener) {
+        listeners.add(listener);
+    }
+
+    public void notifyMoveMade(Position position, Symbol symbol) {
+        for (GameEventListener listener : listeners) {
+            listener.onMoveMade(position, symbol);
+        }
+    }
+    // Notifies user on change of game state
+    public void notifyGameStateChanged(GameState state) {
+        for (GameEventListener listener : listeners) {
+            listener.onGameStateChanged(state);
         }
     }
 
@@ -25,6 +48,7 @@ public class Board {
 
     public void makeMove(Position position, Symbol symbol){
         grid[position.getRow()][position.getCol()] = symbol;
+        notifyMoveMade(position, symbol);
     }
 
     public void printBoard() {
@@ -55,9 +79,14 @@ public class Board {
     }
 
     public void checkGameState(GameContext context) {
+        // Row and Column Win condition checks
         for (int i = 0; i < rows; i++) {
             if (grid[i][0] != Symbol.EMPTY && isWinningLine(grid[i])) {
-                context.next(context.getCurrentPlayer(), true);
+                GameState newState =
+                        grid[i][0] == Symbol.X ? new XWonState() : new OWinState();
+                context.setCurrentState(newState);
+                notifyGameStateChanged(
+                        newState); // Notify listeners when the game state changes
                 return;
             }
         }
@@ -67,10 +96,15 @@ public class Board {
                 column[j] = grid[j][i];
             }
             if (column[0] != Symbol.EMPTY && isWinningLine(column)) {
-                context.next(context.getCurrentPlayer(), true);
+                GameState newState =
+                        column[0] == Symbol.X ? new XWonState() : new OWinState();
+                context.setCurrentState(newState);
+                notifyGameStateChanged(
+                        newState); // Notify listeners when the game state changes
                 return;
             }
         }
+        // Diagonal checks
         Symbol[] diagonal1 = new Symbol[Math.min(rows, cols)];
         Symbol[] diagonal2 = new Symbol[Math.min(rows, cols)];
         for (int i = 0; i < Math.min(rows, cols); i++) {
@@ -78,15 +112,33 @@ public class Board {
             diagonal2[i] = grid[i][cols - 1 - i];
         }
         if (diagonal1[0] != Symbol.EMPTY && isWinningLine(diagonal1)) {
-            context.next(context.getCurrentPlayer(), true);
+            GameState newState =
+                    diagonal1[0] == Symbol.X ? new XWonState() : new OWinState();
+            context.setCurrentState(newState);
+            notifyGameStateChanged(
+                    newState); // Notify listeners when the game state changes
             return;
         }
         if (diagonal2[0] != Symbol.EMPTY && isWinningLine(diagonal2)) {
-            context.next(context.getCurrentPlayer(), true);
+            GameState newState =
+                    diagonal2[0] == Symbol.X ? new XWonState() : new OWinState();
+            context.setCurrentState(newState);
+            notifyGameStateChanged(
+                    newState); // Notify listeners when the game state changes
             return;
         }
-        // Additional logic to handle a draw or continue in progress can be added
-        // here
+        // Draw check
+        for (int row = 0; row < rows; row++) {
+            for (int col = 0; col < cols; col++) {
+                if (grid[row][col] == Symbol.EMPTY) {
+                    context.setCurrentState(new InProgressState());
+                    return;
+                }
+            }
+        }
+        context.setCurrentState(new DrawState());
+        notifyGameStateChanged(
+                new DrawState()); // Notify listeners when the game state changes
     }
 
     private boolean isWinningLine(Symbol[] line) {
