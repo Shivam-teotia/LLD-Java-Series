@@ -5,15 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1d8ae15-504a-4f62-973d-173d564f2346" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/loggingFramework/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/loggingFramework/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/loggingFramework/factory/LoggerFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/loggingFramework/logger/ConsoleLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/loggingFramework/logger/FileLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/loggingFramework/logger/LogLevels.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/loggingFramework/logger/LogMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/loggingFramework/logger/Logger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/loggingFramework/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/snakeAndLadder/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/snakeAndLadder/controller/BoardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/snakeAndLadder/controller/GameController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/snakeAndLadder/controller/PlayerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/snakeAndLadder/entities/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/snakeAndLadder/entities/BoardJump.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/snakeAndLadder/entities/Ladder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/snakeAndLadder/entities/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/snakeAndLadder/entities/Snake.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/snakeAndLadder/factory/DiceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/snakeAndLadder/services/BoardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/snakeAndLadder/services/GameSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/snakeAndLadder/strategy/DiceStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/snakeAndLadder/strategy/EvenDigitDice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/snakeAndLadder/strategy/NormalDice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
