@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1d8ae15-504a-4f62-973d-173d564f2346" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/designPatterns/abstractFactory/with/Buttons.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designPatterns/abstractFactory/with/CheckBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designPatterns/abstractFactory/with/GUIFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designPatterns/abstractFactory/with/MacOSButtons.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designPatterns/abstractFactory/with/MacOSCheckBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designPatterns/abstractFactory/with/MacOSFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designPatterns/abstractFactory/with/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designPatterns/abstractFactory/with/WindowButtonCheckBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designPatterns/abstractFactory/with/WindowButtons.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designPatterns/abstractFactory/with/WindowsFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designPatterns/abstractFactory/without/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designPatterns/abstractFactory/without/WindowCheckbox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designPatterns/abstractFactory/without/WindowsButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designPatterns/builderPatterns/HttpRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designPatterns/builderPatterns/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
