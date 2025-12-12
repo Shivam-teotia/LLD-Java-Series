@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1d8ae15-504a-4f62-973d-173d564f2346" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/designPatterns/observerDesign/LEDDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designPatterns/observerDesign/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designPatterns/observerDesign/MobileDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designPatterns/observerDesign/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designPatterns/observerDesign/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designPatterns/observerDesign/WeatherStation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/loggingFramework/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/loggingFramework/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/loggingFramework/factory/LoggerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/loggingFramework/logger/ConsoleLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/loggingFramework/logger/FileLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/loggingFramework/logger/LogLevels.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/loggingFramework/logger/LogMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/loggingFramework/logger/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/loggingFramework/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="package-info" />
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
       </list>
