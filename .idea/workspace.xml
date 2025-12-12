@@ -5,19 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1d8ae15-504a-4f62-973d-173d564f2346" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/designPatterns/decoratorPattern/BoldDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designPatterns/decoratorPattern/ItalicDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designPatterns/decoratorPattern/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designPatterns/decoratorPattern/PlanTextView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designPatterns/decoratorPattern/TextDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designPatterns/decoratorPattern/TextView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designPatterns/observerDesign/LEDDisplay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designPatterns/observerDesign/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designPatterns/observerDesign/MobileDisplay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designPatterns/observerDesign/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designPatterns/observerDesign/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designPatterns/observerDesign/WeatherStation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/designPatterns/adapter/CheckoutService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/designPatterns/adapter/CheckoutService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/designPatterns/adapter/InhousePayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/designPatterns/adapter/InhousePayment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/designPatterns/adapter/LegacyGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/designPatterns/adapter/LegacyGateway.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/designPatterns/adapter/LegacyGatewayAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/designPatterns/adapter/LegacyGatewayAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/designPatterns/adapter/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/designPatterns/adapter/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/designPatterns/adapter/PaymentProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/designPatterns/adapter/PaymentProcessor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
