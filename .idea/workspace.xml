@@ -5,12 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1d8ae15-504a-4f62-973d-173d564f2346" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ticTacToe/listener/ConsoleGameEventListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ticTacToe/listener/GameEventListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ticTacToe/state/DrawState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ticTacToe/state/InProgressState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designPatterns/factory/method/NotificationFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designPatterns/factory/service/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designPatterns/factory/service/NotificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designPatterns/factory/service/SmsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designPatterns/singleton/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designPatterns/singleton/ThreadSafe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designPatterns/singleton/WithoutThreadSafe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/elevator/entities/Elevator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/elevator/entities/ExternalRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/elevator/entities/InternalRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/elevator/entities/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/elevator/enums/Direction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/elevator/enums/ElevatorState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/elevator/exception/InvalidFloorException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ticTacToe/entities/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ticTacToe/entities/Board.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
