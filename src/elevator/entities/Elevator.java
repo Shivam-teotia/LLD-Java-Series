@@ -2,92 +2,49 @@ package elevator.entities;
 
 import elevator.enums.Direction;
 import elevator.enums.ElevatorState;
+import elevator.observer.Observer;
+import elevator.observer.Subject;
 
-import java.util.NavigableSet;
-import java.util.TreeSet;
+import java.util.ArrayList;
+import java.util.List;
 
-public class Elevator {
+public class Elevator implements Subject {
     private final int id;
     private int currentFloor;
     private Direction direction;
-    private ElevatorState state;
-    private final NavigableSet<Integer> upStops = new TreeSet<>();
-    private final NavigableSet<Integer> downStops = new TreeSet<>();
+    private ElevatorState elevatorState;
+    private List<Observer> observers;
 
-    public Elevator(int id, int floor){
+    public Elevator(int id) {
         this.id = id;
-        this.currentFloor = floor;
+        this.currentFloor = 0;
         this.direction = Direction.IDLE;
-        this.state = ElevatorState.STOPPED;
+        this.observers = new ArrayList<>();
     }
-
-    public int getId() {
-        return id;
-    }
-
-    public ElevatorState getState() {
-        return state;
+    public int getCurrentFloor() {
+        return currentFloor;
     }
 
     public Direction getDirection() {
         return direction;
     }
 
-    public int getCurrentFloor() {
-        return currentFloor;
+    public void moveToFloor(int floor){
+        this.direction = floor > currentFloor ? Direction.UP : Direction.DOWN;
+        this.currentFloor = floor;
+        notifyObserver();
+        this.direction = Direction.IDLE;
     }
 
-    public NavigableSet<Integer> getUpStops() {
-        return upStops;
+    @Override
+    public void addObserver(Observer ob) {
+        this.observers.add(ob);
     }
 
-    public NavigableSet<Integer> getDownStops() {
-        return downStops;
-    }
-
-    public void addDestination(int floor){
-        if(floor>this.currentFloor){
-            upStops.add(floor);
-        }
-        else if (floor == this.currentFloor){
-            System.out.println("Already on same floor");
-            return;
-        }
-        else {
-            downStops.add(floor);
-        }
-    }
-
-    public void externalDestination(int floor, Direction direction){
-        if(direction == Direction.UP) upStops.add(floor);
-        else if (direction == Direction.DOWN) downStops.add(floor);
-    }
-
-    public Integer nextStop(){
-        if(direction == Direction.UP){
-            Integer next= upStops.ceiling(this.currentFloor);
-            if(next != null) return next;
-            if(!downStops.isEmpty()){
-                return downStops.last();
-            }
-            return null;
-        }
-        else if(direction == Direction.DOWN){
-            Integer next = downStops.floor(this.currentFloor);
-            if(next != null) return next;
-            if (!upStops.isEmpty()){
-                return upStops.first();
-            }
-            return null;
-        }
-        else { // NONE idle -> pick nearest
-            Integer up = upStops.ceiling(currentFloor);
-            Integer down = downStops.floor(currentFloor);
-            if (up == null && down == null) return null;
-            if (up == null) return down;
-            if (down == null) return up;
-            if (Math.abs(up - currentFloor) <= Math.abs(down - currentFloor)) return up;
-            return down;
+    @Override
+    public void notifyObserver() {
+        for(Observer ob: observers){
+            ob.update(currentFloor, direction);
         }
     }
 }

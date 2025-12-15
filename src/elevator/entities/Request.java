@@ -1,15 +1,27 @@
 package elevator.entities;
 
-public abstract class Request {
-    protected final int floor;
+import elevator.enums.Direction;
 
-    protected Request(int floor) {
-        this.floor = floor;
+public class Request {
+    private final int sourceFloor;
+    private final int destinationFloor;
+    private final Direction direction;
+
+    public int getSourceFloor() {
+        return sourceFloor;
     }
 
-    public int getFloor(){
-        return this.floor;
+    public int getDestinationFloor() {
+        return destinationFloor;
     }
 
-    public abstract boolean IsExternal();
+    public Direction getDirection() {
+        return direction;
+    }
+
+    public Request(int sourceFloor, int destinationFloor) {
+        this.sourceFloor = sourceFloor;
+        this.destinationFloor = destinationFloor;
+        this.direction = destinationFloor > sourceFloor ? Direction.UP : Direction.DOWN;
+    }
 }
