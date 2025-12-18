@@ -5,23 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1d8ae15-504a-4f62-973d-173d564f2346" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/elevator/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/elevator/algorithm/SchedulingStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/elevator/algorithm/SimpleFCSStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/elevator/controller/ElevatorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/elevator/entities/Button.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/elevator/entities/ExternalButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/elevator/entities/InternalButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/elevator/observer/DisplayBoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/elevator/observer/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/elevator/observer/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/elevator/service/ElevatorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/elevator/service/RequestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atm/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atm/controller/ATMController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atm/entities/ATMContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atm/entities/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atm/entities/Card.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atm/entities/CashDispenser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atm/entities/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atm/enums/OperationType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atm/services/AtmService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atm/services/BankService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atm/state/ATMState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atm/state/AuthenticatedState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atm/state/CardInsertedState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atm/state/IdleState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atm/state/TransactionState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/elevator/entities/Elevator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/elevator/entities/Elevator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/elevator/entities/ExternalRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/elevator/entities/InternalRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/elevator/entities/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/elevator/entities/Request.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +31,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -53,6 +52,9 @@
     &quot;accountId&quot;: &quot;c03d2c4a-9806-48a4-bc61-846c0f205a90&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/atm/services/BankService.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
