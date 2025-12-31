@@ -5,21 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1d8ae15-504a-4f62-973d-173d564f2346" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/atm/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/atm/controller/ATMController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/atm/entities/ATMContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/atm/entities/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/atm/entities/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/atm/entities/CashDispenser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/atm/entities/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/atm/enums/OperationType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/atm/services/AtmService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/atm/services/BankService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/atm/state/ATMState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/atm/state/AuthenticatedState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/atm/state/CardInsertedState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/atm/state/IdleState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/atm/state/TransactionState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedin/entities/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedin/entities/Education.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedin/entities/Experience.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedin/entities/Like.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedin/entities/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedin/entities/NewsFeed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedin/entities/Notification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedin/entities/Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedin/entities/Profile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedin/enums/ConnectionStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedin/enums/NotificationType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedin/observer/NotificationObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedin/observer/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedin/service/NotificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedin/service/SearchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedin/strategy/SortingStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
