@@ -11,7 +11,7 @@ public class Board {
     private final int rows;
     private final int cols;
     private final Symbol[][] grid;
-    private List<GameEventListener> listeners;
+    private final List<GameEventListener> listeners;
 
     public Board(int rows, int cols){
         this.rows = rows;
