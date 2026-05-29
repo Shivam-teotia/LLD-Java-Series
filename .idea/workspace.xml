@@ -5,22 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1d8ae15-504a-4f62-973d-173d564f2346" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/linkedin/entities/Connection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedin/entities/NewsFeed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedin/service/ConnectionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedin/service/NewFeedService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedin/service/NotificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedin/service/SearchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedin/strategy/ChronologicalStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedin/strategy/FeedSortingStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedin/entities/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedin/entities/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedin/entities/Education.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedin/entities/Education.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedin/entities/Experience.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedin/entities/Experience.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedin/entities/Like.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedin/entities/Like.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedin/entities/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedin/entities/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedin/entities/NewsFeed.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedin/entities/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedin/entities/Notification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedin/entities/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedin/entities/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedin/entities/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedin/entities/Profile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedin/enums/ConnectionStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedin/enums/ConnectionStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedin/observer/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedin/observer/Subject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedin/service/NotificationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedin/service/SearchService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedin/strategy/SortingStrategy.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
