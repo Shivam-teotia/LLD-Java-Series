@@ -5,19 +5,19 @@ import linkedin.entities.Notification;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Subject {
-    public final List<NotificationObserver> observers = new ArrayList<>();
+public class Subject {
+    private final List<NotificationObserver> observers = new ArrayList<NotificationObserver>();
 
-    public void addObserver(NotificationObserver observer){
+    public void addObserver(NotificationObserver  observer) {
         this.observers.add(observer);
     }
 
-    public void removeObserver(NotificationObserver observer){
+    public void removeObserver(NotificationObserver  observer) {
         this.observers.remove(observer);
     }
-    
-    public void notifyObserver(Notification notification){
-        for (NotificationObserver observer : this.observers) {
+
+    public void notifyObservers(Notification notification) {
+        for (NotificationObserver observer : observers) {
             observer.update(notification);
         }
     }

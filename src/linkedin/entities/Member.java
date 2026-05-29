@@ -9,31 +9,39 @@ public class Member implements NotificationObserver {
     private final String name;
     private final String email;
     private final Profile profile;
-    private final Set<Member> connections = new HashSet<>();
-    private final List<Notification> notifications = new ArrayList<>();
+    private final Set<Member> connections = new HashSet<Member>();
+    private final List<Notification>  notifications = new ArrayList<Notification>();
 
-    private Member(String name, String email, Profile profile) {
+    private Member(String email, String name, Profile profile) {
         this.id = UUID.randomUUID().toString();
-        this.name = name;
         this.email = email;
+        this.name = name;
         this.profile = profile;
     }
 
-    public void addConnection(Member member){
-        this.connections.add(member);
+    public String getId() { return id; }
+    public String getName() { return name; }
+    public String getEmail() { return email; }
+    public Profile getProfile() { return profile; }
+    public Set<Member> getConnections() { return connections; }
+    public void addConnection(Member member) { connections.add(member); }
+
+    public void displayProfile(){
+        System.out.println("\n--- Profile for " + name + " (" + email + ") ---");
+        profile.display();
+        System.out.println("  Connections: " + connections.size());
     }
 
-    public void viewNotification(){
-        if (notifications.isEmpty()){
-            System.out.println("No new notification");
+    public void viewNotifications() {
+        System.out.println("--- Notifications for " + name + " (" + email + ") ---");
+        if (notifications.isEmpty()) {
+            System.out.println("  No new notifications");
+            return;
         }
-        else {
-            System.out.println(this.notifications.size()  + " New notifications");
-            notifications.stream().filter(n->!n.isRead()).forEach(n->{
-                System.out.println("  -  " + n.getContent());
-                n.markAsRead();
-            });
-        }
+        notifications.stream().filter(Notification::isRead).forEach(notification -> {
+            System.out.println("    - " + notification.getContent());
+            notification.markAsRead();
+        });
     }
 
     @Override
@@ -42,27 +50,11 @@ public class Member implements NotificationObserver {
         System.out.printf("Notification pushed to %s: %s%n", this.name, notification.getContent());
     }
 
-    public String getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public Profile getProfile() {
-        return profile;
-    }
-
-    public static class Builder{
-        private final String id;
-        private final String name;
-        private final String email;
-        private final Profile profile = new Profile();
+    public static class Builder {
+        private String email;
+        private String name;
+        private String id;
+        private Profile profile =  new Profile();
 
         public Builder(String name, String email) {
             this.id = UUID.randomUUID().toString();
@@ -70,23 +62,38 @@ public class Member implements NotificationObserver {
             this.email = email;
         }
 
-        public Builder withSummary(String summary){
+        public Builder email(String email) {
+            this.email = email;
+            return this;
+        };
+
+        public Builder name(String name) {
+            this.name = name;
+            return this;
+        }
+
+        public Builder profile(Profile profile) {
+            this.profile = profile;
+            return this;
+        }
+
+        public Builder summary(String summary) {
             this.profile.setSummary(summary);
             return this;
         }
 
-        public Builder addEducation(Education education){
+        public Builder addEducation(Education education) {
             this.profile.addEducation(education);
             return this;
         }
 
-        public Builder addExperience(Experience experience){
+        public Builder addExperience(Experience experience) {
             this.profile.addExperience(experience);
             return this;
         }
 
-        public Member build(){
-            return new Member(name,email,profile);
+        public Member build() {
+            return new Member(email, name, profile);
         }
     }
 }

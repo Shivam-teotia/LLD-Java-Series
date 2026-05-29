@@ -21,31 +21,44 @@ public class Post extends Subject {
         this.author = member;
         this.content = content;
         this.createdAt = createdAt;
-
-        //observer
-        this.observers.add(this.author);
+        this.addObserver(member);
     }
 
     public void addLike(Member member) {
-        likes.add(new Like(member));
-        String notificationContent = member.getName() + " liked your post.";
-        Notification notification = new Notification(author.getId(),notificationContent, NotificationType.POST_LIKE);
-        notifyObserver(notification);
+        this.likes.add(new Like(member));
+        String notificationContent = member.getName() + " liked your post";
+        Notification notification = new Notification(author.getId(), NotificationType.POST_LIKE, notificationContent);
+        this.notifyObservers(notification);
     }
 
-    public void addComment(Member member, String text) {
-        comments.add(new Comment(member, text));
-        String notificationContent = member.getName() + " commented on your post: \"" + text + "\"";
-        Notification notification = new Notification(author.getId(),notificationContent, NotificationType.POST_COMMENT);
-        notifyObserver(notification);
+    public void addComment(Member member, String content) {
+        this.comments.add(new Comment(member, content));
+        String notificationContent = member.getName() + " commented your post";
+        Notification notification = new Notification(author.getId(), NotificationType.POST_COMMENT, notificationContent);
+        this.notifyObservers(notification);
     }
 
-    public String getId() { return id; }
-    public Member getAuthor() { return author; }
-    public String getContent() { return content; }
-    public LocalDateTime getCreatedAt() { return createdAt; }
-    public List<Like> getLikes() { return likes; }
-    public List<Comment> getComments() { return comments; }
+    public String getId() {
+        return this.id;
+    }
 
+    public Member getAuthor() {
+        return this.author;
+    }
 
+    public String getContent() {
+        return this.content;
+    }
+
+    public LocalDateTime getCreatedAt() {
+        return this.createdAt;
+    }
+
+    public List<Like> getLikes() {
+        return this.likes;
+    }
+
+    public List<Comment> getComments() {
+        return this.comments;
+    }
 }

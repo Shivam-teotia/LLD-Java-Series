@@ -2,7 +2,7 @@ package linkedin.enums;
 
 public enum ConnectionStatus {
     PENDING,
-    ACCEPTED,
+    APPROVED,
     REJECTED,
     WITHDRAWN
 }

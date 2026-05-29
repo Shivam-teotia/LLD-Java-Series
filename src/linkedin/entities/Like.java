@@ -10,5 +10,12 @@ public class Like {
         this.member = member;
         this.createdAt = LocalDateTime.now();
     }
-    public Member getMember() { return member; }
+
+    public Member getMember() {
+        return this.member;
+    }
+
+    public LocalDateTime getCreatedAt() {
+        return this.createdAt;
+    }
 }
